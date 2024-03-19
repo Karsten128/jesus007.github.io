@@ -1,0 +1,166 @@
+.redes-sociales {
+    display: flex;
+    justify-content: space-between; /* Alineación a la derecha */
+    align-items: center;
+    background-color: #333; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */ 
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra de redes sociales esté encima de otros elementos */
+    transition: top 0.3s; /* Agrega una transición suave al ocultar/mostrar la barra */
+}
+.iconos-redes {
+    display: flex;
+    justify-content: center; /* Para centrar los iconos de redes sociales */
+    align-items: center;
+}
+
+.contacto {
+    display: flex;
+    justify-content: flex-end; /* Para alinear el correo y el teléfono al final de la derecha */
+    align-items: center;
+}
+.iconos-redes a {
+    margin: 0 10px; 
+}
+.contacto span {
+    margin-left: 10px; 
+    color: #ffffff;
+}
+.redes-sociales.oculto {
+    top: -50px; 
+}
+.redes-sociales a {
+    margin-left: 30px; 
+}
+.redes-sociales img {
+    width: 30px; 
+    height: 30px;
+}
+.redes-sociales .contacto span {
+    margin-left: 10px;
+    color: #ffffff; 
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: right; 
+    max-width: 100%; 
+    overflow-x: hidden; 
+}
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+.search-container {
+    margin-top: 10px;
+}
+input[type="search"] {
+    width: 50%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url('imagenes/Bandera\ del\ colegio.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: rgba(255, 255, 255, 0.247); 
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 100;
+    width: 100%;
+}
+nav {
+    color: #000000;
+    text-align: center;
+    display: block;
+    padding: 15px 20px;
+}
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+nav a:hover {
+    background: #e4e4e4;
+
+}
+h2 {
+    margin-bottom: 10px;
+
+}        
+.contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+}
+.grupo-imagenes {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+}
+.grupo-imagenes img {
+        margin: 0 10px;
+        width: 150px;
+        height: 150px;
+}
+.persona-container {
+    position: relative;
+    width: 200px; 
+    height: 250px; 
+    transition: transform 0.3s;
+}
+.persona-container:hover {
+    transform: scale(1.1); 
+}
+.persona-img {
+    width: 100%;
+    height: 100%;
+}
+.persona-nombre {
+    text-align: center; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 0.5px;
+    box-sizing: border-box; 
+    margin-top: auto; 
+}
+.persona-info {
+    justify-self: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    box-sizing: border-box; 
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+.persona-container:hover .persona-info {
+    visibility: visible;
+    opacity: 1;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
